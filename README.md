@@ -17,3 +17,4 @@ Java 17 and Spring Boot (maven).
 ## Querying ##
 - To ask for the number of sons, daughters or wives use this command : family-tree count sons/daughters/wives of {name}
 - To ask for the father use this command : family-tree father of {name}
+
