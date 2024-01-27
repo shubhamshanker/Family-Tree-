@@ -46,6 +46,6 @@ public class QueryService {
         Person person = personRepository.findByName(name);
         if(Objects.isNull(person)) return "";
         List<Relationship> sons = relationshipRepository.findByPerson2IdAndType(person.getId(), Constants.FATHER);
-        return personRepository.findById(sons.get(0).getPerson1Id()).get().getName();
+        return personRepository.findById(sons.get(0).getPerson1Id()).get().getName() + "\n";
     }
 }

@@ -40,7 +40,7 @@ public class TreeService {
             Person newPerson = Person.builder().name(name).gender(gender).build();
             personRepository.save(newPerson);
             log.info("Saved person {}", newPerson);
-            return "Saved " + name + " successfully";
+            return "Saved " + name + " successfully" + "\n";
         }
     }
 
@@ -59,7 +59,7 @@ public class TreeService {
             RelationshipType relationshipType = RelationshipType.builder().type(type).build();
             relationshipTypeRepository.save(relationshipType);
             log.info("Saved relationship {}", relationshipType);
-            return "Saved " + type + " successfully";
+            return "Saved " + type + " successfully" + "\n";
         }
     }
 
@@ -90,7 +90,7 @@ public class TreeService {
         relationshipRepository.save(relationship);
 
         log.info("Saved relationship {}", relationship);
-        return "Saved relationship successfully";
+        return "Saved relationship successfully" + "\n";
     }
 
 //    public String removePersonAndRelationship(String person1Name, String person2Name, String type)
